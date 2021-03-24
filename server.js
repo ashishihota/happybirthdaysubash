@@ -1,23 +1,13 @@
 var http = require('http');
+const express = require('express');
 var fs = require('fs');
+var path = require('path');
 
-const PORT=8080; 
+const PORT=8080;
 
-const serveCSS = function (req, res) {
-    if (req.url.indexOf('css') !== -1) {
-        const css = fs.createReadStream(__dirname + req.url, 'utf8');
-        css.pipe(res);
-    }
-};
+const app = express();
 
 
-fs.readFile('./index.html', function (err, html) {
-
-    if (err) throw err;    
-
-    http.createServer(function(request, response) {  
-        response.writeHeader(200, {"Content-Type": "text/html"});  
-        response.write(html);  
-        response.end();  
-    }).listen(PORT);
+app.get('/', function(req, res){
+    res.sendFile(path.join(__dirname + 'index.html');
 });
