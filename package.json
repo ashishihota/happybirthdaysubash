@@ -1,27 +1,25 @@
 {
-  "name": "subashmanohari",
+  "name": "happybirthdaysubash",
   "version": "1.0.0",
-  "description": "hbdsubbu",
+  "description": "A test website that I am creating to learn react and JS.",
   "main": "server.js",
+  "dependencies": {
+    "bootstrap-icons": "^1.4.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node server.js";
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ashishihota/happybirthdaysubash.git"
   },
-  "keywords": [
-    "HappyBirthday",
-    "bhai"
-  ],
-  "author": "Ashish Hota",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/ashishihota/happybirthdaysubash/issues"
   },
-  "homepage": "https://github.com/ashishihota/happybirthdaysubash#readme",
-  "dependencies": {
-    "bootstrap-icons": "^1.4.0",
-    "express": "^4.17.1"
-  }
+  "homepage": "https://github.com/ashishihota/happybirthdaysubash#readme"
 }
