@@ -3,14 +3,14 @@ const express = require('express');
 var fs = require('fs');
 var path = require('path');
 
-const port=8080;
+// const port=8080;
 
 const app = express();
 
 
-app.listen(port, function() {
-  console.log('app started at port : ' + port);
-});
+// app.listen(port, function() {
+//   console.log('app started at port : ' + port);
+// });
 
 
 app.use(express.static(__dirname + '/Public'));
